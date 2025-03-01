@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('vendas', function (Blueprint $table) {
             $table->id();
             $table->string('Nome_Prod');
+            $table->integer('Preco_Prod');
             $table->longtext('Descricao_Prod');
             $table->datetime('Data_Venda');
         });
